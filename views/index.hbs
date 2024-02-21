@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Form</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <form action="submit" method="post">
+        <div class="main-container">
+            <label for="name"><b>Name</b></label>
+            <input type="text" name="name" placeholder="Enter your name">
+            
+            <label for="employee_id"><b>Employee ID</b></label>
+            <input type="text" name="employee_id" placeholder="Enter your ID">
+            
+            <label for="dept"><b>Department</b></label>
+            <select name="dept" id="dept">
+                <option value="hr">HR</option>
+                <option value="it">IT</option>
+                <option value="crm">CRM</option>
+                <option value="r&d">R&D</option>
+            </select>
+            
+            <div class="radio">
+                <label for="gender"><b>Gender</b></label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+            </div>
+            
+            <label for="designation"><b>Designation</b></label>
+            <input type="text" name="designation" placeholder="Enter your designation">
+            
+            <label for="salary"><b>Salary</b></label>
+            <input type="text" name="salary" placeholder="Enter your salary">
+        </div>
+        <button class="submit-btn" type="submit">Submit</button>
+    </form>
+</body>
+</html>
